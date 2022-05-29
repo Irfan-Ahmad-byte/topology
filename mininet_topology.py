@@ -19,6 +19,7 @@ class cusTopo(Topo):
 		host3 = self.addHost('h3')
 		host4 = self.addHost('h4')
 		host5 = self.addHost('h5')
+		host6 = self.addHost('h6')
 		switch1 = self.addSwitch('s1')
 		switch2 = self.addSwitch('s2')
 		
@@ -30,7 +31,9 @@ class cusTopo(Topo):
 		self.addLink(host3, host4)
 		self.addLink(host5, host5)
 		self.addLink(host1, host4)
-		self.addLink(switch1, host4)
+		self.addLink(host1, host5)
+		self.addLink(host5, host6)
+		self.addLink(host3, host6)
 
 
 topos = {'cusTopo': ( lambda: cusTopo() )}
