@@ -29,7 +29,7 @@ class cusTopo(Topo):
 		self.addLink(switch2, host2)
 		self.addLink(host2, host3)
 		self.addLink(host3, host4)
-		self.addLink(host5, host5)
+		self.addLink(host4, host5)
 		self.addLink(host1, host4)
 		self.addLink(host5, host6)
 		self.addLink(host3, host6)
